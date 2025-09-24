@@ -11,7 +11,7 @@
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
 
-    var url = `https://wa.me/91xxxxxxxxxx?text=
+    var url = `https://wa.me/918320898933?text=
       *New Enquiry from Website*%0A
       *Name:* ${name}%0A
       *Phone:* ${phone}%0A
