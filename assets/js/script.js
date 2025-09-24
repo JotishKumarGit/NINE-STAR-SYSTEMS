@@ -5,24 +5,21 @@
 
 
 //  Send message on whatsapp
- function sendToWhatsApp() {
-    var name = document.getElementById("name").value.trim();
-    var email = document.getElementById("email").value.trim();
-    var phone = document.getElementById("phone").value.trim();
-    var message = document.getElementById("message").value.trim();
+  function sendToWhatsApp() {
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
 
-    var whatsappNumber = "919626107779";
-
-    var url = "https://wa.me/" + whatsappNumber +
-      "?text=" + encodeURIComponent(
-        "📩 New Inquiry from Website\n\n" +
-        "👤 Name: " + name + "\n" +
-        "📧 Email: " + email + "\n" +
-        "📱 Phone: " + phone + "\n" +
-        "💬 Message: " + message
-      );
+    var url = `https://wa.me/91xxxxxxxxxx?text=
+      *New Enquiry from Website*%0A
+      *Name:* ${name}%0A
+      *Phone:* ${phone}%0A
+      *Email:* ${email}%0A
+      *Message:* ${message}`;
 
     window.open(url, '_blank');
-    return false; // Prevent form from submitting normally
+    return false;
   }
+
 

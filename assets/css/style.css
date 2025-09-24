@@ -1,45 +1,70 @@
 /* This is for navbar */
-/* Sticky Navbar Customization */
+/* Sticky navbar with dark background and soft shadow */
 .sticky-navbar {
   position: sticky;
   top: 0;
   z-index: 1030;
-  background-color: #fff;
+  background-color: #0d0d0d; /* Dark background */
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* subtle shadow */
-}
-/* Optional: Add subtle shadow when sticky */
-.sticky-top {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 255, 153, 0.1); /* Matches About Us neon style */
 }
 
-/* Customize Bootstrap Dropdown */
+/* Navbar brand */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #00ffaa !important; /* Eco-green */
+  letter-spacing: 1px;
+}
+
+/* Nav links */
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #00ffaa !important;
+}
+
+/* Dropdown menu */
 .dropdown-menu {
   animation: dropdownFade 0.4s ease;
-  border-radius: 8px;
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
   border: none;
   padding: 10px 0;
-  background: #ffffff;
-  min-width: 200px;
+  background: #1a1a1a; /* Match dark theme */
+  min-width: 220px;
 }
 
 /* Dropdown item style */
 .dropdown-menu .dropdown-item {
-  padding: 10px 20px;
-  transition: all 0.3s ease;
+  padding: 12px 20px;
   font-weight: 500;
-  color: #333;
+  color: #fff;
+  transition: all 0.3s ease;
 }
 
 /* Hover effect */
 .dropdown-menu .dropdown-item:hover {
-  background-color: #f3f4f6;
-  color: #0d6efd;
-  border-left: 3px solid #0d6efd;
+  background-color: #00ffaa1a;
+  color: #00ffaa;
+  border-left: 3px solid #00ffaa;
 }
 
-/* Smooth open animation */
+/* Toggle icon color fix */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.8)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Smooth dropdown animation */
 @keyframes dropdownFade {
   0% {
     opacity: 0;
@@ -51,110 +76,364 @@
   }
 }
 
-/* about us css */
-.about-heading {
+/* about us css */ /* Wrapper background */
+.about-wrapper {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  color: #fff;
+}
+
+/* Dark-themed heading */
+.about-heading-dark {
   text-align: center;
   margin-bottom: 50px;
+  color: #ffffff;
 }
 
-.about-heading h2 {
-  font-size: 2.5rem;
+.about-heading-dark h2 {
+  font-size: 2.7rem;
   font-weight: 700;
-  color: #333;
+  text-transform: uppercase;
+  color: #00ff99; /* Eco-energy color */
 }
 
-.about-heading p {
+.about-heading-dark p {
   max-width: 800px;
   margin: 0 auto;
-  color: #555;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
+  color: #dddddd;
 }
 
+/* About image */
 .about-img img {
   width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 255, 153, 0.2);
 }
 
-.about-text {
-  background-color: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+/* Dark text box */
+.about-text-dark {
+  background-color: #111;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
   text-align: center;
 }
 
-.about-text h2 {
-  font-size: 2rem;
+.about-text-dark h2 {
+  font-size: 2.2rem;
   font-weight: 600;
-  color: #222;
+  color: #00ffaa;
   margin-bottom: 20px;
 }
 
-.about-text p {
-  color: #555;
-  line-height: 1.7;
+.about-text-dark p {
+  color: #cccccc;
+  line-height: 1.8;
 }
 
-.about-text .btn {
-  margin-top: 20px;
-  background-color: #007bff;
-  color: #fff;
+/* Button style */
+.btn.btn-dark-theme {
+  margin-top: 25px;
+  background-color: #00ffaa;
+  color: #000;
   border-radius: 50px;
-  padding: 10px 25px;
-  transition: 0.3s ease;
+  padding: 12px 30px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  display: inline-block;
+  text-decoration: none;
 }
 
-.about-text .btn:hover {
-  background-color: #0056b3;
+.btn.btn-dark-theme:hover {
+  background-color: #00cc88;
+  color: #fff;
 }
 
+/* Responsive */
 @media (max-width: 767px) {
-  .about-text {
+  .about-text-dark {
     margin-top: 30px;
   }
 
-  .about-heading h2 {
+  .about-heading-dark h2 {
     font-size: 2rem;
   }
 }
 
 /* products css */
+/* Section Background & Headings */
+.product-section {
+  background: #0d0d0d;
+  color: #fff;
+}
 
-/* faq css */
-.faq-section {
-  padding: 80px 0;
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00ffaa;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  color: #cccccc;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Product Card */
+.product-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 255, 153, 0.1);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 255, 153, 0.15);
+}
+
+.product-card img {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #222;
+}
+
+.product-card .card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #00ffaa;
+  margin-bottom: 15px;
+}
+
+/* Custom Buttons */
+.btn-custom {
+  background-color: #00ffaa;
+  color: #000;
+  border-radius: 50px;
+  padding: 8px 20px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.btn-custom:hover {
+  background-color: #00cc88;
+  color: #fff;
+}
+
+.btn-outline-custom {
+  border: 2px solid #00ffaa;
+  color: #00ffaa;
+  border-radius: 50px;
+  padding: 8px 20px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.btn-outline-custom:hover {
+  background-color: #00ffaa;
+  color: #000;
+}
+
+/* Read More Button */
+.btn-read-more {
+  background: none;
+  border: 2px solid #00ffaa;
+  color: #00ffaa;
+  padding: 10px 30px;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.btn-read-more:hover {
+  background-color: #00ffaa;
+  color: #000;
+}
+/* services css start */
+/* SERVICES SECTION */
+.services-section {
+  background-color: #0d0d0d;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00ffaa;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  color: #cccccc;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Card Styling */
+.service-card {
+  background-color: #1a1a1a;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 255, 153, 0.07);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 255, 153, 0.15);
+}
+
+.icon-box {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #00ffaa;
+  margin-bottom: 15px;
+}
+
+.service-desc {
+  font-size: 1rem;
+  color: #bbbbbb;
+  line-height: 1.6;
+}
+
+/* faq css start *//* Dark FAQ Section */
+.faq-section-dark {
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+  padding: 60px 0;
 }
 
 .faq-header {
-  text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-.faq-header h2 {
+.faq-title {
+  color: #f5f5f5;
   font-weight: 700;
-  color: #333;
+  font-size: 2rem; /* smaller */
 }
 
-.accordion-button {
-  font-weight: 500;
-  color: #333;
-  background-color: #ffffff;
+.faq-subtitle {
+  color: #aaaaaa;
+  font-size: 0.95rem;
 }
 
-.accordion-button:focus {
-  box-shadow: none;
-}
-
-.accordion-item {
+/* Accordion Items */
+.accordion-item-dark {
+  background-color: #1a1a1a;
+  margin-bottom: 12px;
   border: none;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 255, 170, 0.08);
 }
 
-.accordion-body {
-  background-color: #fff;
-  color: #555;
+/* Accordion Buttons */
+.accordion-button-dark {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.8rem 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none;
+}
+
+.accordion-button-dark:hover,
+.accordion-button-dark:not(.collapsed) {
+  background-color: #0d0d0d;
+  color: #00ffaa;
+}
+
+.accordion-button-dark::after {
+  filter: invert(1);
+}
+
+/* Accordion Body */
+.accordion-body-dark {
+  background-color: #1a1a1a;
+  color: #cccccc;
+  font-size: 0.9rem;
+  padding: 1rem 1.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* contact us css */
+.contact-section-dark {
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+}
+
+.contact-section-dark h2 {
+  color: #00ffaa;
+  font-weight: 700;
+}
+
+.contact-section-dark p {
+  color: #aaaaaa;
+  font-size: 0.95rem;
+}
+
+/* Form container */
+.contact-form-box {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Input Fields */
+.form-control-dark,
+.form-control-dark:focus,
+.form-control-dark:active {
+  background-color: #121212;
+  color: #ffffff;
+  border: 1px solid #333;
+  font-size: 0.95rem;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.form-control-dark::placeholder {
+  color: #888;
+}
+
+.form-control-dark:focus {
+  border-color: #00ffaa;
+  box-shadow: 0 0 0 2px rgba(0, 255, 170, 0.2);
+}
+
+/* WhatsApp Button */
+.contact-form-box .btn-success {
+  background-color: #00ffaa;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.contact-form-box .btn-success:hover {
+  background-color: #00dd99;
+  color: #000;
+}
+
+/* Map Wrapper */
+.map-wrapper {
+  border: 3px solid #00ffaa;
+  border-radius: 10px;
+  overflow: hidden;
 }
