@@ -85,8 +85,21 @@
 
 <body>
 
-  <!-- header -->
+  <!-- Header -->
+  <?php include('header.php') ?>
 
+  <!-- Breadcrumb Section -->
+  <section class="breadcrumb-section">
+    <div class="breadcrumb-content">
+      <h2>About Us</h2>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">About Us</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
 
   <!-- About Section -->
   <div class="container-fluid py-5 about-wrapper">
@@ -109,7 +122,7 @@
 
           <!-- Left Image -->
           <div class="col-md-6 about-img mb-4 mb-md-0" data-aos="zoom-in" data-aos-duration="1000">
-            <img src="assets/images/Led_high_bay_light.jpeg" alt="NINE STAR SYSTEMS">
+            <img src="assets/images/bner_2.jpg" alt="NINE STAR SYSTEMS">
           </div>
 
           <!-- Right Text -->
@@ -134,5 +147,5 @@
     </div>
   </div>
 
-
-
+  <!-- footer -->
+  <?php include('footer.php') ?>

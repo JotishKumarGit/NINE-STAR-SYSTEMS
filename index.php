@@ -84,50 +84,9 @@
 </head>
 
 <body>
-  <!-- header -->
-  <nav class="navbar navbar-expand-lg sticky-navbar" data-aos="fade-down" data-aos-duration="1000">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">NINE STAR SYSTEMS</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Products
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="LED_LIGHT.html">LED LIGHT</a></li>
-              <li><a class="dropdown-item" href="SOLAR_STREET_LIGHT.html">SOLAR STREET LIGHT</a></li>
-              <li><a class="dropdown-item" href="SOLAR_ZATKA_MACHINE.html">SOLAR ZATKA MACHINE</a></li>
-              <li><a class="dropdown-item" href="Voltage_Stabilize.html">Voltage Stabilize</a></li>
-              <li><a class="dropdown-item" href="Led Garden Light.html">Led Garden Light</a></li>
-              <li><a class="dropdown-item" href="Mono_Solar_Panel.html">Mono Solar Panel</a></li>
-              <li><a class="dropdown-item" href="Solar_Water_Heater.html">Solar Water Heater</a></li>
-              <li><a class="dropdown-item" href="Solar_Mppt_Invertor.html">Solar Mppt Invertor</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <!-- Header -->
+  <?php include('header.php') ?>
 
   <!-- carousel -->
   <div id="carouselExample" class="carousel slide">
@@ -219,8 +178,8 @@
             <div class="card-body">
               <h5 class="card-title">LED LIGHT</h5>
               <div class="d-flex justify-content-center gap-2">
-                <a href="#" class="btn btn-outline-custom">Enquiry</a>
-                <a href="LED_LIGHT.html" class="btn btn-custom">Details</a>
+                <a href="#" class="btn btn-outline-custom" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquiry</a>
+                <a href="LED_LIGHT.php" class="btn btn-custom">Details</a>
               </div>
             </div>
           </div>
@@ -233,8 +192,8 @@
             <div class="card-body">
               <h5 class="card-title">SOLAR STREET LIGHT</h5>
               <div class="d-flex justify-content-center gap-2">
-                <a href="#" class="btn btn-outline-custom">Enquiry</a>
-                <a href="SOLAR_STREET_LIGHT.html" class="btn btn-custom">Details</a>
+                <a href="#" class="btn btn-outline-custom" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquiry</a>
+                <a href="SOLAR_STREET_LIGHT.php" class="btn btn-custom">Details</a>
               </div>
             </div>
           </div>
@@ -247,12 +206,13 @@
             <div class="card-body">
               <h5 class="card-title">SOLAR ZATKA MACHINE</h5>
               <div class="d-flex justify-content-center gap-2">
-                <a href="#" class="btn btn-outline-custom">Enquiry</a>
-                <a href="SOLAR_ZATKA_MACHINE.html" class="btn btn-custom">Details</a>
+                <a href="#" class="btn btn-outline-custom" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquiry</a>
+                <a href="SOLAR_ZATKA_MACHINE.php" class="btn btn-custom">Details</a>
               </div>
             </div>
           </div>
         </div>
+
         <!-- Product Card  4 -->
         <div class="col-sm-10 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="250">
           <div class="product-card h-100">
@@ -261,12 +221,13 @@
             <div class="card-body">
               <h5 class="card-title">Voltage Stabilizer (10 kva)</h5>
               <div class="d-flex justify-content-center gap-2">
-                <a href="#" class="btn btn-outline-custom">Enquiry</a>
-                <a href="Voltage_Stabilize.html" class="btn btn-custom">Details</a>
+                <a href="#" class="btn btn-outline-custom" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquiry</a>
+                <a href="Voltage_Stabilize.php" class="btn btn-custom">Details</a>
               </div>
             </div>
           </div>
         </div>
+
         <!-- Product Card  5 -->
         <div class="col-sm-10 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="250">
           <div class="product-card h-100">
@@ -274,12 +235,13 @@
             <div class="card-body">
               <h5 class="card-title">Led Garden Light (20 Watt)</h5>
               <div class="d-flex justify-content-center gap-2">
-                <a href="#" class="btn btn-outline-custom">Enquiry</a>
-                <a href="Led Garden Light.html" class="btn btn-custom">Details</a>
+                <a href="#" class="btn btn-outline-custom" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquiry</a>
+                <a href="Led_Garden_Light.php" class="btn btn-custom">Details</a>
               </div>
             </div>
           </div>
         </div>
+
         <!-- Product Card  6  -->
         <div class="col-sm-10 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="250">
           <div class="product-card h-100">
@@ -287,8 +249,8 @@
             <div class="card-body">
               <h5 class="card-title">Mono Solar Panel (20 Watt)</h5>
               <div class="d-flex justify-content-center gap-2">
-                <a href="#" class="btn btn-outline-custom">Enquiry</a>
-                <a href="Mono_Solar_Panel.html" class="btn btn-custom">Details</a>
+                <a href="#" class="btn btn-outline-custom" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquiry</a>
+                <a href="Mono_Solar_Panel.php" class="btn btn-custom">Details</a>
               </div>
             </div>
           </div>
@@ -300,8 +262,8 @@
             <div class="card-body">
               <h5 class="card-title">Solar Water Heater (200 Lpd)</h5>
               <div class="d-flex justify-content-center gap-2">
-                <a href="#" class="btn btn-outline-custom">Enquiry</a>
-                <a href="Solar_Water_Heater.html" class="btn btn-custom">Details</a>
+                <a href="#" class="btn btn-outline-custom" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquiry</a>
+                <a href="Solar_Water_Heater.php" class="btn btn-custom">Details</a>
               </div>
             </div>
           </div>
@@ -315,8 +277,8 @@
             <div class="card-body">
               <h5 class="card-title">Solar Mppt Invertor (850/1250 va)</h5>
               <div class="d-flex justify-content-center gap-2">
-                <a href="#" class="btn btn-outline-custom">Enquiry</a>
-                <a href="Solar_Mppt_Invertor.html" class="btn btn-custom">Details</a>
+                <a href="#" class="btn btn-outline-custom" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquiry</a>
+                <a href="Solar_Mppt_Invertor.php" class="btn btn-custom">Details</a>
               </div>
             </div>
           </div>
@@ -629,7 +591,7 @@
       </div>
     </div>
   </section>
-  <!-- collections end -->
+  <!-- gallery end -->
 
   <!-- contact us  -->
   <section class="contact-section-dark py-5" id="contact">
@@ -698,84 +660,5 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white pt-5 pb-4" data-aos="fade-up" data-aos-delay="100">
-    <div class="container text-center text-md-start">
-      <div class="row text-center text-md-start">
-
-        <!-- Company Info -->
-        <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
-          <h5 class="text-uppercase fw-bold mb-4">NINE STAR SYSTEMS</h5>
-          <p>
-            We deliver smart and sustainable solutions — from energy-efficient LED lights to eco-friendly solar water
-            heaters and more, blending modern technology with everyday convenience.
-          </p>
-        </div>
-
-        <!-- Products -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">Products</h6>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white text-decoration-none"></a></li>
-            <li><a href="#" class="text-white text-decoration-none"></a></li>
-            <li><a href="#" class="text-white text-decoration-none"></a></li>
-            <li><a href="#" class="text-white text-decoration-none"></a></li>
-            <li><a href="#" class="text-white text-decoration-none"></a></li>
-          </ul>
-        </div>
-
-        <!-- Quick Links -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">Quick Links</h6>
-          <ul class="list-unstyled">
-            <li><a href="#about" class="text-white text-decoration-none">About Us</a></li>
-            <li><a href="#products" class="text-white text-decoration-none">Products</a></li>
-            <li><a href="#services" class="text-white text-decoration-none">Services</a></li>
-            <li><a href="#faq" class="text-white text-decoration-none">FAQ</a></li>
-            <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="bi bi-house-door-fill me-2"></i> B-62 , G.I.D.C ELECTRONICES ESTATE ,NEAR ARMY
-            STORE,Gandhinagar,GUJRAT
-          </p>
-          <p><i class="bi bi-envelope-fill me-2"></i> Sales.ninestarsystems@gmail.com</p>
-          <p><i class="bi bi-telephone-fill me-2"></i> +91 8320898933</p>
-        </div>
-
-      </div>
-
-      <!-- Divider -->
-      <hr class="my-4">
-
-      <!-- Social Media + Copyright -->
-      <div class="row align-items-center text-center">
-        <div class="col-md-6 ">
-          <p class="mb-0 text-center">© 2025 NINE STAR SYSTEMS. All Rights Reserved.</p> <span>Design
-            By <a href="https://trade4export.com/">Trade4Export</a></span>
-        </div>
-        <div class="col-md-6">
-          <div class="d-flex justify-content-center justify-content-md-end gap-3">
-            <a href="#" class="text-white"><i class="bi bi-facebook fs-5"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-instagram fs-5"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-whatsapp fs-5"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="assets/js/script.js"></script>
-  <!-- bootstrap js  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-</body>
-
-</html>
+  <!-- footer -->
+  <?php include('footer.php') ?>
